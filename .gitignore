@@ -1,0 +1,21 @@
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+.env.*
+
+# Qdrant local data
+qdrant_data/
+
+# Cloned repos
+repos/
+
+# IDE
+.vscode/
+.idea/

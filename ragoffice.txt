@@ -1,0 +1,111 @@
+Redis does one job in this system: caching recent query results so you don't call Claude twice for the same question.
+
+on what bsis remebeds the data in vscode, because saving i sdone on each line
+
+first issue is collecting all repos could , now each quesr do semantic search on more lrger data because dev or use will not tell each time to search on this epo
+
+and how to fetch muliple repos at once, and how to track commit comes or not in code so it auto reemebds 
+and how to handle edge cases that if question is not related to rag  r not , should i use first an llm to decide this, like some querieues are in my project , how o it decide which dev is asking , also it can handle async requests
+
+all data usage and tree or llm needed or not before embeddings?
+
+
+1. make all chunk emed and 
+2. decide qdrant in serer , mivus , weaviate , pine cone, reds which i used
+
+prob, if making a file tree per branch per repo , we may need pg db to store tree and every commit will make a new tree which is not good and also we may need to search on this
+
+so stick to qdrant meta dat filtering
+
+ 1 cli vs curl diff, 
+ 2 why web hook if user local is connected to server via api, 
+ 3 branches in local ?
+ 4 
+
+ollama pull qwen3-embedding:0.6b
+
+Remove-Item -Recurse -Force .\qdrant_data
+
+TODO;
+
+Install: Download Qdrant binary from https://github.com/qdrant/qdrant/releases — just one .exe for Windows.
+
+CHunker logic, to add depenedencies of each chunk, in meta data, 
+understand metadata, 
+
+lma studio instead of ollama
+
+curl -X POST http://localhost:8000/trigger ^
+-H "Content-Type: application/json" ^
+-d "{\"repo_url\":\"https://github.com/pallets/click\",\"branch\":\"main\",\"full\":true}"
+
+PowerShell	backtick `
+CMD	caret ^
+Browser	no syntax
+
+use token-based clone URL.
+
+If repo is private (important for you)
+
+You must update ingestion to use token, like:
+
+https://username:app_password@bitbucket.org/wahaj-coder/abc1.git
+
+.env token ≠ git clone authentication
+https://username:app_password@bitbucket.org/wahaj-coder/abc1.git
+OPTION B (BETTER - recommended)
+
+Use git credential helper OR pass env:
+
+git config --global credential.helper store
+Change architecture:
+
+Instead of .env login, do:
+
+👉 user sends token per request
+
+Example:
+
+{
+  "repo_url": "...",
+  "token": "user_bitbucket_token"
+}
+
+Then clone like:
+
+https://token@bitbucket.org/wahaj-coder/abc1.git
+
+
+
+python setup_webhook.py --repo https://bitbucket.org/wahaj-coder/abc1
+
+uvicorn webhook_server:app --host 0.0.0.0 --port 8000
+
+Curl is only for manually testing sear
+uvicorn search_api:app --host 0.0.0.0 --port 8001
+
+WEBHOOK_URL=https://abc123.ngrok.io/webhook/github
+
+ngrok http 8000
+
+
+deleted code???
+
+secret: uEWl14VufGptnp4b
+
+pip uninstall tree-sitter tree-sitter-languages -y
+pip install tree-sitter==0.20.1 tree-sitter-languages==1.7.0
+
+Run Qdrant with Docker and open UI like this:
+
+docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
+
+searching
+
+
+now it did not include parts of code otehr than class or methods, so include those lones and can be must send it without function def until chunk size is completed
+
+Build your app image, use ready images for Qdrant + Ollama
+Run all 3 together on one server using Docker (same machine)
+Connect via internal URLs (qdrant:6333, ollama:11434) and deploy once ✔
+when and what deleted 

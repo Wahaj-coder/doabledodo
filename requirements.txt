@@ -1,0 +1,56 @@
+# ============================================================
+# requirements.txt — RAG Pipeline
+# ============================================================
+
+# Web server
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+
+# Qdrant vector DB client
+qdrant-client>=1.9.0
+
+# HTTP client (Ollama calls)
+requests>=2.31.0
+
+# Env management
+python-dotenv>=1.0.0
+
+# Chunker dependencies
+# tree-sitter>=0.21.0
+# tree-sitter-languages>=1.10.2
+tree-sitter==0.20.4
+tree-sitter-languages==1.7.0
+nbformat>=5.9.0
+
+# ── Install steps ────────────────────────────────────────────
+# 1. pip install -r requirements.txt
+#
+# 2. Install Ollama:
+#    Linux/Mac: curl -fsSL https://ollama.com/install.sh | sh
+#    Windows:   https://ollama.com/download
+#
+# 3. Pull embedding model:
+#    ollama pull nomic-embed-text        (768-dim, smaller, faster)
+#    ollama pull qwen3:embedding          (1024-dim, better quality)
+#
+# 4. Start Ollama server:
+#    ollama serve
+#
+# 5. Qdrant (choose one):
+#    Option A — local file mode (no setup, just set QDRANT_MODE=local in .env)
+#    Option B — Docker:
+#        docker run -p 6333:6333 -v $(pwd)/qdrant_storage:/qdrant/storage qdrant/qdrant
+#    Option C — Hetzner server: same Docker command, set QDRANT_MODE=server, QDRANT_URL in .env
+#
+# 6. Test pipeline:
+#    python embedder.py         (test Ollama connection)
+#    python qdrant_store.py     (test Qdrant connection)
+#    python ingestor.py --repo https://github.com/pallets/click
+#
+# 7. Start servers:
+#    uvicorn webhook_server:app --host 0.0.0.0 --port 8000
+#    uvicorn search_api:app     --host 0.0.0.0 --port 8001
+#
+# 8. For ngrok (testing webhooks locally):
+#    ngrok http 8000
+#    Copy https URL → GitHub repo settings → Webhooks
