@@ -1,45 +1,59 @@
-
-# from qdrant_store import search, close_client
-# from embedder import embed_texts
-
-# REPO_URL   = "https://github.com/Wahaj-coder/abc___X"
-# BRANCH     = "main"
-# COLLECTION = "test_repo"
-
-# q_vec = embed_texts(["cricket enocder lstm"])[0]
-
-# results = search(
-#     collection_name=COLLECTION,
-#     query_vector=q_vec,
-#     top_k=3,
-#     filter_repo=REPO_URL,
-#     filter_branch=BRANCH,
-# )
-
-# for r in results:
-#     print(f"\n[{r['score']:.3f}] {r['file_path']}")
-#     print(r['text'][:150])
-
-# # close_client()
-# # from chunker import chunk_repo
-
-# # chunks = chunk_repo("./repos/abc___X")
-# # for c in chunks:
-# #     print(f"\n{'='*50}")
-# #     print(f"FILE: {c['file_path']} | NAME: {c['name']}")
-# #     print(c['text'])  # full text, no [:200] limit
-
 from qdrant_client import QdrantClient
 
+OUTPUT_FILE = "code_chunks.txt"
 client = QdrantClient(url="http://localhost:6333")
 
-points, next_page = client.scroll(
-    collection_name="abc1",
-    limit=100,
-    with_payload=True,
-    with_vectors=False
-)
+collections = client.get_collections().collections
+collection_names = [c.name for c in collections]
+print(f"Found {len(collection_names)} collections: {collection_names}")
 
-for p in points:
-    print("\nID:", p.id)
-    print("Payload:", p.payload)
+total_count = 0
+
+with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    for collection_name in collection_names:
+        info = client.get_collection(collection_name)
+        print(f"\n--- Collection: {collection_name} | Points: {info.points_count} ---")
+
+        offset = None
+        coll_count = 0
+
+        f.write(f"\n{'='*60}\n")
+        f.write(f"COLLECTION: {collection_name}\n")
+        f.write(f"{'='*60}\n\n")
+
+        while True:
+            points, next_offset = client.scroll(
+                collection_name=collection_name,
+                limit=100,
+                offset=offset,
+                with_payload=True,
+                with_vectors=False
+            )
+
+            if not points:
+                break
+
+            for p in points:
+                description = p.payload.get("description", "")
+                text        = p.payload.get("text", "")
+
+                # Reconstruct embed_text exactly as describer.py built it
+                embed_text = f"{description}\n\n{text}".strip() if description else text
+
+                coll_count += 1
+                total_count += 1
+
+                f.write(f"# CHUNK {coll_count} | ID: {p.id}\n\n")
+                f.write(embed_text if embed_text else "[NO CONTENT]")
+                f.write("\n\n" + "-" * 60 + "\n\n")
+
+            print(f"  Scrolled {coll_count} chunks so far...")
+
+            if next_offset is None:
+                break
+
+            offset = next_offset
+
+        print(f"  Done: {coll_count} chunks from '{collection_name}'")
+
+print(f"\n✅ Done. {total_count} total chunks across {len(collection_names)} collections saved to '{OUTPUT_FILE}'")

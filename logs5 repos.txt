@@ -1,0 +1,133 @@
+
+Already up to date.
+[ingestor] Commit: 6d8ce677
+[ingestor] Chunking entire repo...
+Already up to date.
+Already up to date.
+[chunker] Total chunks before dep resolution: 2914
+[chunker] Total chunks: 2914
+[ingestor] 2914 chunks produced.
+[ingestor] SKIP_DESCRIPTIONS=true — embedding raw code only.
+[ingestor] Embedding (dense + BM25 sparse)...
+[bm25] Loaded vocab (4510 tokens) ← ./bm25_vocab.json
+[ingestor] Commit: e27f55c4
+[ingestor] Chunking entire repo...
+[ingestor] Commit: fc6c7c47
+[ingestor] Chunking entire repo...
+Already up to date.
+[bm25] Vocab size: 4987, avgdl: 59.8
+[embedder] Computing dense vectors...
+[ingestor] Commit: e9165e07
+[ingestor] Chunking entire repo...
+[chunker] Total chunks before dep resolution: 48
+[chunker] Total chunks: 48
+[ingestor] 48 chunks produced.
+[ingestor] SKIP_DESCRIPTIONS=true — embedding raw code only.
+[ingestor] Embedding (dense + BM25 sparse)...
+[bm25] Vocab size: 5180, avgdl: 77.3
+[embedder] Computing dense vectors...
+[chunker] Total chunks before dep resolution: 1566
+[chunker] Total chunks: 1566
+[ingestor] 1566 chunks produced.
+[ingestor] SKIP_DESCRIPTIONS=true — embedding raw code only.
+[ingestor] Embedding (dense + BM25 sparse)...
+[bm25] Vocab size: 8263, avgdl: 64.2
+[embedder] Computing dense vectors...
+[chunker] Total chunks before dep resolution: 782
+[chunker] Total chunks: 782
+[ingestor] 782 chunks produced.
+[ingestor] SKIP_DESCRIPTIONS=true — embedding raw code only.
+[ingestor] Embedding (dense + BM25 sparse)...
+[bm25] Vocab size: 8263, avgdl: 71.5
+[embedder] Computing dense vectors...
+Already up to date.
+[ingestor] Commit: a5038f93
+[ingestor] Chunking entire repo...
+[chunker] Total chunks before dep resolution: 62
+[chunker] Total chunks: 62
+[ingestor] 62 chunks produced.
+[ingestor] SKIP_DESCRIPTIONS=true — embedding raw code only.
+[ingestor] Embedding (dense + BM25 sparse)...
+[bm25] Vocab size: 8385, avgdl: 82.7
+[embedder] Computing dense vectors...
+[embedder] Dense batch of 45 embedded ✓
+[embedder] Dense batch of 137 embedded ✓
+[embedder] Dense batch of 23 embedded ✓
+[embedder] Dense batch of 39 embedded ✓
+[embedder] Dense batch of 3 embedded ✓
+[embedder] Computing BM25 sparse vectors...
+[ingestor] Saving BM25 vocab...
+[bm25] Saved vocab (8385 tokens) → ./bm25_vocab.json
+[ingestor] Upserting to Qdrant...
+[qdrant] Connecting to server: http://localhost:6333
+[qdrant] Creating hybrid collection 'abc___X' dim=1024
+[qdrant] Upserted 48/48
+[ingestor] ✅ Done. 48 chunks indexed into 'abc___X'.
+[ingestor] Pulling latest in ./repos\abc___X
+Already up to date.
+[ingestor] Commit: e27f55c4
+[ingestor] Chunking entire repo...
+[chunker] Total chunks before dep resolution: 48
+[chunker] Total chunks: 48
+[ingestor] 48 chunks produced.
+[ingestor] SKIP_DESCRIPTIONS=true — embedding raw code only.
+[ingestor] Embedding (dense + BM25 sparse)...
+[bm25] Vocab size: 8385, avgdl: 77.3
+[embedder] Computing dense vectors...
+[embedder] Dense batch of 94 embedded ✓
+[embedder] Dense batch of 32 embedded ✓
+[embedder] Dense batch of 23 embedded ✓
+[embedder] Computing BM25 sparse vectors...
+[ingestor] Saving BM25 vocab...
+[bm25] Saved vocab (8385 tokens) → ./bm25_vocab.json
+[ingestor] Upserting to Qdrant...
+[qdrant] Creating hybrid collection 'abc1' dim=1024
+[qdrant] Upserted 62/62
+[ingestor] ✅ Done. 62 chunks indexed into 'abc1'.
+[ingestor] Pulling latest in ./repos\abc1
+Already up to date.
+[ingestor] Commit: a5038f93
+[ingestor] Chunking entire repo...
+[chunker] Total chunks before dep resolution: 62
+[chunker] Total chunks: 62
+[ingestor] 62 chunks produced.
+[ingestor] SKIP_DESCRIPTIONS=true — embedding raw code only.
+[ingestor] Embedding (dense + BM25 sparse)...
+[bm25] Vocab size: 8385, avgdl: 82.7
+[embedder] Computing dense vectors...
+[embedder] Dense batch of 45 embedded ✓
+[embedder] Dense batch of 1 embedded ✓
+[embedder] Dense batch of 108 embedded ✓
+[embedder] Dense batch of 45 embedded ✓
+[embedder] Dense batch of 39 embedded ✓
+[embedder] Dense batch of 3 embedded ✓
+[embedder] Computing BM25 sparse vectors...
+[ingestor] Saving BM25 vocab...
+[bm25] Saved vocab (8385 tokens) → ./bm25_vocab.json
+[ingestor] Upserting to Qdrant...
+[qdrant] Collection 'abc___X' already exists.
+[qdrant] Upserted 48/48
+[ingestor] ✅ Done. 48 chunks indexed into 'abc___X'.
+[embedder] Dense batch of 41 embedded ✓
+[embedder] Dense batch of 86 embedded ✓
+[embedder] Dense batch of 52 embedded ✓
+[embedder] Dense batch of 23 embedded ✓
+[embedder] Computing BM25 sparse vectors...
+[ingestor] Saving BM25 vocab...
+[bm25] Saved vocab (8385 tokens) → ./bm25_vocab.json
+[ingestor] Upserting to Qdrant...
+[qdrant] Collection 'abc1' already exists.
+[qdrant] Upserted 62/62
+[ingestor] ✅ Done. 62 chunks indexed into 'abc1'.
+[embedder] Dense batch of 32 embedded ✓
+[embedder] Dense batch of 97 embedded ✓
+[embedder] Dense batch of 39 embedded ✓
+[embedder] Dense batch of 48 embedded ✓
+[embedder] Dense batch of 89 embedded ✓
+[embedder] Dense batch of 59 embedded ✓
+[embedder] Dense batch of 31 embedded ✓
+[embedder] Dense batch of 58 embedded ✓
+[embedder] Dense batch of 45 embedded ✓
+[embedder] Dense batch of 39 embedded ✓
+[embedder] Dense batch of 47 embedded ✓
+

@@ -1,0 +1,299 @@
+[
+  {
+    "query": "wrapper",
+    "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/fc2video.py#L46-L57",
+    "expected_name": "fc2video_download",
+    "retrieved": [
+      {
+        "file_path": ".github/workflows/python-package.yml",
+        "name": "config::2"
+      },
+      {
+        "file_path": "you-get.json",
+        "name": "config::38"
+      },
+      {
+        "file_path": "src/you_get/extractors/miaopai.py",
+        "name": "miaopai_download_by_wbmp"
+      },
+      {
+        "file_path": "README.md",
+        "name": "section::13"
+      },
+      {
+        "file_path": "requirements.txt",
+        "name": "chunk::0"
+      }
+    ]
+  },
+  {
+    "query": "http://stackoverflow.com/a/30923963/2946714",
+    "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/ucas.py#L18-L29",
+    "expected_name": "dictify",
+    "retrieved": [
+      {
+        "file_path": "CHANGELOG.rst",
+        "name": "section::0"
+      },
+      {
+        "file_path": "src/you_get/common.py",
+        "name": "url_save.numreturn"
+      },
+      {
+        "file_path": ".github/workflows/python-package.yml",
+        "name": "config::2"
+      },
+      {
+        "file_path": "you-get.json",
+        "name": "config::38"
+      },
+      {
+        "file_path": "LICENSE.txt",
+        "name": "chunk::0"
+      }
+    ]
+  },
+  {
+    "query": "wrapper",
+    "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/yixia.py#L65-L93",
+    "expected_name": "yixia_download",
+    "retrieved": [
+      {
+        "file_path": ".github/workflows/python-package.yml",
+        "name": "config::2"
+      },
+      {
+        "file_path": "you-get.json",
+        "name": "config::38"
+      },
+      {
+        "file_path": "src/you_get/extractors/miaopai.py",
+        "name": "miaopai_download_by_wbmp"
+      },
+      {
+        "file_path": "README.md",
+        "name": "section::13"
+      },
+      {
+        "file_path": "requirements.txt",
+        "name": "chunk::0"
+      }
+    ]
+  },
+  {
+    "query": "Source: Android mobile",
+    "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/veoh.py#L19-L33",
+    "expected_name": "veoh_download_by_id",
+    "retrieved": [
+      {
+        "file_path": ".github/workflows/python-package.yml",
+        "name": "config::2"
+      },
+      {
+        "file_path": "you-get.json",
+        "name": "config::38"
+      },
+      {
+        "file_path": "src/you_get/extractors/huomaotv.py",
+        "name": "get_mobile_room_url"
+      },
+      {
+        "file_path": "src/you_get/extractors/showroom.py",
+        "name": "showroom_download_by_room_id"
+      },
+      {
+        "file_path": "src/you_get/extractors/miaopai.py",
+        "name": "miaopai_download_by_fid"
+      }
+    ]
+  },
+  {
+    "query": "str->None",
+    "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/vimeo.py#L15-L19",
+    "expected_name": "vimeo_download_by_channel",
+    "retrieved": [
+      {
+        "file_path": "src/you_get/extractors/netease.py",
+        "name": "netease_hymn"
+      },
+      {
+        "file_path": "you-get.json",
+        "name": "config::38"
+      },
+      {
+        "file_path": "requirements.txt",
+        "name": "chunk::0"
+      },
+      {
+        "file_path": ".github/workflows/python-package.yml",
+        "name": "config::2"
+      },
+      {
+        "file_path": "src/you_get/common.py",
+        "name": "tr"
+      }
+    ]
+  },
+  {
+    "query": "str/int->None",
+    "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/vimeo.py#L22-L36",
+    "expected_name": "vimeo_download_by_channel_id",
+    "retrieved": [
+      {
+        "file_path": "src/you_get/util/strings.py",
+        "name": "_sharp2uni"
+      },
+      {
+        "file_path": "src/you_get/common.py",
+        "name": "url_save.numreturn"
+      },
+      {
+        "file_path": "you-get.json",
+        "name": "config::38"
+      },
+      {
+        "file_path": "src/you_get/util/strings.py",
+        "name": "parameterize"
+      },
+      {
+        "file_path": ".github/workflows/python-package.yml",
+        "name": "config::2"
+      }
+    ]
+  },
+  {
+    "query": "Splicing URLs according to video ID to get video details",
+    "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/ixigua.py#L34-L78",
+    "expected_name": "get_video_url_from_video_id",
+    "retrieved": [
+      {
+        "file_path": "src/you_get/extractors/youtube.py",
+        "name": "YouTube.get_vid_from_url"
+      },
+      {
+        "file_path": "src/you_get/extractors/mgtv.py",
+        "name": "unnamed::42"
+      },
+      {
+        "file_path": "src/you_get/extractors/qie.py",
+        "name": "QiE.get_vid_from_url"
+      },
+      {
+        "file_path": "src/you_get/extractors/youku.py",
+        "name": "Youku.get_vid_from_page"
+      },
+      {
+        "file_path": "src/you_get/extractors/zhanqi.py",
+        "name": "zhanqi_video"
+      }
+    ]
+  },
+  {
+    "query": "Extracts video ID from URL.",
+    "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/mgtv.py#L27-L33",
+    "expected_name": "MGTV.get_vid_from_url",
+    "retrieved": [
+      {
+        "file_path": "src/you_get/extractors/mgtv.py",
+        "name": "unnamed::42"
+      },
+      {
+        "file_path": "src/you_get/extractors/youtube.py",
+        "name": "YouTube.get_vid_from_url"
+      },
+      {
+        "file_path": "src/you_get/extractors/qie.py",
+        "name": "QiE.get_vid_from_url"
+      },
+      {
+        "file_path": "src/you_get/extractors/youku.py",
+        "name": "Youku.get_vid_from_url"
+      },
+      {
+        "file_path": "src/you_get/extractors/qie_video.py",
+        "name": "QieVideo.get_vid_from_url"
+      }
+    ]
+  },
+  {
+    "query": "Override the original one\n        Ugly ugly dirty hack",
+    "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/iqiyi.py#L158-L218",
+    "expected_name": "Iqiyi.download",
+    "retrieved": [
+      {
+        "file_path": "src/you_get/extractors/missevan.py",
+        "name": "MissEvanWithStream.__init__"
+      },
+      {
+        "file_path": "src/you_get/extractors/missevan.py",
+        "name": "MissEvan.__init__"
+      },
+      {
+        "file_path": "src/you_get/extractors/youtube.py",
+        "name": "YouTube.dethrottle"
+      },
+      {
+        "file_path": "src/you_get/extractors/missevan.py",
+        "name": "MissEvanWithStream.set_danmaku"
+      },
+      {
+        "file_path": "src/you_get/extractors/youku.py",
+        "name": "unnamed::107"
+      }
+    ]
+  },
+  {
+    "query": "str, str, str, bool, bool ->None\n\n    Download Acfun video by vid.\n\n    Call Acfun API, decide which site to use, and pass the job to its\n    extractor.",
+    "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/acfun.py#L42-L109",
+    "expected_name": "acfun_download_by_vid",
+    "retrieved": [
+      {
+        "file_path": "src/you_get/extractors/acfun.py",
+        "name": "[file_context]"
+      },
+      {
+        "file_path": "src/you_get/extractors/funshion.py",
+        "name": "funshion_download"
+      },
+      {
+        "file_path": "src/you_get/extractor.py",
+        "name": "VideoExtractor.download_by_vid"
+      },
+      {
+        "file_path": "src/you_get/extractors/acfun.py",
+        "name": "AcFun.acfun_download"
+      },
+      {
+        "file_path": "src/you_get/extractors/infoq.py",
+        "name": "[file_context]"
+      }
+    ]
+  },
+  {
+    "query": "str->str",
+    "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/showroom.py#L11-L24",
+    "expected_name": "showroom_get_roomid_by_room_url_key",
+    "retrieved": [
+      {
+        "file_path": "src/you_get/processor/join_flv.py",
+        "name": "ECMAObject.__str__"
+      },
+      {
+        "file_path": "src/you_get/extractors/netease.py",
+        "name": "netease_hymn"
+      },
+      {
+        "file_path": "src/you_get/common.py",
+        "name": "tr"
+      },
+      {
+        "file_path": "src/you_get/util/strings.py",
+        "name": "[file_context]"
+      },
+      {
+        "file_path": "src/you_get/processor/join_flv.py",
+        "name": "read_amf_string"
+      }
+    ]
+  }
+]

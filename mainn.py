@@ -9,7 +9,7 @@ MODEL = os.getenv("EMBEDDING_MODEL")
 
 # ─────────────────────────────
 # 1. CHECK OLLAMA
-# ─────────────────────────────
+# ───────────────────────────── bgem3
 print("\n[1] Checking Ollama...")
 
 r = requests.get(OLLAMA_URL)

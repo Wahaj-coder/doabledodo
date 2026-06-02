@@ -14,7 +14,7 @@ requests>=2.31.0
 
 # Env management
 python-dotenv>=1.0.0
-
+mcp httpx python-dotenv
 # Chunker dependencies
 # tree-sitter>=0.21.0
 # tree-sitter-languages>=1.10.2

@@ -1,0 +1,2023 @@
+{
+  "config": {
+    "language": "python",
+    "sample_size": 50,
+    "max_repos": 3,
+    "top_k": 5,
+    "use_rerank": false,
+    "repos": [
+      "https://github.com/soimort/you-get"
+    ],
+    "file_field": "func_code_url",
+    "name_field": "func_name"
+  },
+  "metrics": {
+    "recall_at_5": 0.78,
+    "mrr": 0.6463,
+    "hits": 39,
+    "total": 50,
+    "errors": 0
+  },
+  "results": [
+    {
+      "query": "Extracts video ID from URL.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/youtube.py#L135-L143",
+      "expected_name": "YouTube.get_vid_from_url",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "unnamed::42",
+          "score": 0.8820136
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/youtube.py",
+          "name": "YouTube.get_vid_from_url",
+          "score": 0.8750359
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/qie.py",
+          "name": "QiE.get_vid_from_url",
+          "score": 0.8298076
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "Youku.get_vid_from_url",
+          "score": 0.8211328
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/qie_video.py",
+          "name": "QieVideo.get_vid_from_url",
+          "score": 0.8077616
+        }
+      ]
+    },
+    {
+      "query": "str->list\n    Convert XML to URL List.\n    From Biligrab.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/miomio.py#L41-L51",
+      "expected_name": "sina_xml_to_url_list",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/miomio.py",
+          "name": "sina_xml_to_url_list",
+          "score": 0.83916324
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/miomio.py",
+          "name": "[file_context]",
+          "score": 0.69757164
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/ucas.py",
+          "name": "_ucas_get_url_lists_by_resourceID",
+          "score": 0.6114468
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/tudou.py",
+          "name": "parse_plist",
+          "score": 0.60621345
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/tucao.py",
+          "name": "tucao_download",
+          "score": 0.56455564
+        }
+      ]
+    },
+    {
+      "query": "From http://cdn37.atwikiimg.com/sitescript/pub/dksitescript/FC2.site.js\n    Also com.hps.util.fc2.FC2EncrptUtil.makeMimiLocal\n    L110",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/fc2video.py#L11-L17",
+      "expected_name": "makeMimi",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/fc2video.py",
+          "name": "makeMimi",
+          "score": 0.78302795
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/fc2video.py",
+          "name": "[file_context]",
+          "score": 0.59707445
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "MGTV.tk2",
+          "score": 0.5431687
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/fc2video.py",
+          "name": "fc2video_download",
+          "score": 0.5417554
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/util/strings.py",
+          "name": "_sharp2uni",
+          "score": 0.53697574
+        }
+      ]
+    },
+    {
+      "query": "wrapper",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/fc2video.py#L46-L57",
+      "expected_name": "fc2video_download",
+      "collection": "you-get",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": ".github/workflows/python-package.yml",
+          "name": "config::2",
+          "score": 0.5484784
+        },
+        {
+          "rank": 2,
+          "file_path": "you-get.json",
+          "name": "config::38",
+          "score": 0.5391686
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/miaopai.py",
+          "name": "miaopai_download_by_wbmp",
+          "score": 0.49117416
+        },
+        {
+          "rank": 4,
+          "file_path": "README.md",
+          "name": "section::13",
+          "score": 0.49009418
+        },
+        {
+          "rank": 5,
+          "file_path": "requirements.txt",
+          "name": "chunk::0",
+          "score": 0.48929414
+        }
+      ]
+    },
+    {
+      "query": "Downloads Dailymotion videos by URL.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/dailymotion.py#L13-L35",
+      "expected_name": "dailymotion_download",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/dailymotion.py",
+          "name": "dailymotion_download",
+          "score": 0.8579991
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/dailymotion.py",
+          "name": "[file_context]",
+          "score": 0.7965693
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download",
+          "score": 0.759498
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download",
+          "score": 0.7570027
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/ucas.py",
+          "name": "ucas_download_single",
+          "score": 0.7562423
+        }
+      ]
+    },
+    {
+      "query": "http://stackoverflow.com/a/30923963/2946714",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/ucas.py#L18-L29",
+      "expected_name": "dictify",
+      "collection": "you-get",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "CHANGELOG.rst",
+          "name": "section::0",
+          "score": 0.5412507
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/common.py",
+          "name": "url_save.numreturn",
+          "score": 0.514333
+        },
+        {
+          "rank": 3,
+          "file_path": ".github/workflows/python-package.yml",
+          "name": "config::2",
+          "score": 0.51295245
+        },
+        {
+          "rank": 4,
+          "file_path": "you-get.json",
+          "name": "config::38",
+          "score": 0.5029669
+        },
+        {
+          "rank": 5,
+          "file_path": "LICENSE.txt",
+          "name": "chunk::0",
+          "score": 0.4965261
+        }
+      ]
+    },
+    {
+      "query": "video page",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/ucas.py#L102-L117",
+      "expected_name": "ucas_download_single",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "Youku.get_vid_from_page",
+          "score": 0.6379535
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/ucas.py",
+          "name": "ucas_download_single",
+          "score": 0.60875416
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/icourses.py",
+          "name": "icourses_playlist_new",
+          "score": 0.5991142
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/fc2video.py",
+          "name": "fc2video_download",
+          "score": 0.589747
+        },
+        {
+          "rank": 5,
+          "file_path": "CHANGELOG.rst",
+          "name": "section::0",
+          "score": 0.5808856
+        }
+      ]
+    },
+    {
+      "query": "course page",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/ucas.py#L119-L127",
+      "expected_name": "ucas_download_playlist",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/ucas.py",
+          "name": "ucas_download_playlist",
+          "score": 0.6432031
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "wanmen_download_by_course_topic",
+          "score": 0.63394415
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "wanmen_download_by_course_topic_part",
+          "score": 0.62558746
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "wanmen_download_by_course",
+          "score": 0.62007713
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/icourses.py",
+          "name": "public_course_get_title",
+          "score": 0.6063746
+        }
+      ]
+    },
+    {
+      "query": "Downloads a Sina video by its unique vid.\n    http://video.sina.com.cn/",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/sina.py#L41-L52",
+      "expected_name": "sina_download_by_vid",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vid",
+          "score": 0.9031596
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download",
+          "score": 0.8874432
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vkey",
+          "score": 0.8701365
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "[file_context]",
+          "score": 0.8573607
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_zxt",
+          "score": 0.8338814
+        }
+      ]
+    },
+    {
+      "query": "Downloads a Sina video by its unique vkey.\n    http://video.sina.com/",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/sina.py#L54-L64",
+      "expected_name": "sina_download_by_vkey",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vkey",
+          "score": 0.91443634
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download",
+          "score": 0.8756777
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "[file_context]",
+          "score": 0.8579223
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vid",
+          "score": 0.8570564
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_zxt",
+          "score": 0.80498636
+        }
+      ]
+    },
+    {
+      "query": "Downloads Sina videos by URL.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/sina.py#L94-L121",
+      "expected_name": "sina_download",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download",
+          "score": 0.91050303
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vid",
+          "score": 0.8809269
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vkey",
+          "score": 0.86622876
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_zxt",
+          "score": 0.8559077
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "[file_context]",
+          "score": 0.8109731
+        }
+      ]
+    },
+    {
+      "query": "wrapper",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/yixia.py#L65-L93",
+      "expected_name": "yixia_download",
+      "collection": "you-get",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": ".github/workflows/python-package.yml",
+          "name": "config::2",
+          "score": 0.5484784
+        },
+        {
+          "rank": 2,
+          "file_path": "you-get.json",
+          "name": "config::38",
+          "score": 0.5391686
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/miaopai.py",
+          "name": "miaopai_download_by_wbmp",
+          "score": 0.49117416
+        },
+        {
+          "rank": 4,
+          "file_path": "README.md",
+          "name": "section::13",
+          "score": 0.49009418
+        },
+        {
+          "rank": 5,
+          "file_path": "requirements.txt",
+          "name": "chunk::0",
+          "score": 0.48929414
+        }
+      ]
+    },
+    {
+      "query": "Get item_id",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/veoh.py#L8-L16",
+      "expected_name": "veoh_download",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "_wanmen_get_boke_id_by_json_topic_part",
+          "score": 0.55028546
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/showroom.py",
+          "name": "showroom_get_roomid_by_room_url_key",
+          "score": 0.5475774
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/qie.py",
+          "name": "QiE.get_room_id_from_url",
+          "score": 0.54229194
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/flickr.py",
+          "name": "get_photoset_id",
+          "score": 0.53808874
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/veoh.py",
+          "name": "veoh_download",
+          "score": 0.53800863
+        }
+      ]
+    },
+    {
+      "query": "Source: Android mobile",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/veoh.py#L19-L33",
+      "expected_name": "veoh_download_by_id",
+      "collection": "you-get",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": ".github/workflows/python-package.yml",
+          "name": "config::2",
+          "score": 0.56734407
+        },
+        {
+          "rank": 2,
+          "file_path": "you-get.json",
+          "name": "config::38",
+          "score": 0.5344622
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/huomaotv.py",
+          "name": "get_mobile_room_url",
+          "score": 0.522349
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/showroom.py",
+          "name": "showroom_download_by_room_id",
+          "score": 0.5206001
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/miaopai.py",
+          "name": "miaopai_download_by_fid",
+          "score": 0.5018611
+        }
+      ]
+    },
+    {
+      "query": "self, str->None\n        \n        Keyword arguments:\n        self: self\n        vid: The video ID for BokeCC cloud, something like\n        FE3BB999594978049C33DC5901307461\n        \n        Calls the prepare() to download the video.\n        \n        If no title is provided, this method shall try to find a proper title\n        with the information providin within the\n        returned content of the API.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/bokecc.py#L17-L39",
+      "expected_name": "BokeCC.download_by_id",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/bokecc.py",
+          "name": "BokeCC.download_by_id",
+          "score": 0.8113184
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/bokecc.py",
+          "name": "BokeCC.prepare",
+          "score": 0.80363154
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/qingting.py",
+          "name": "Qingting.prepare",
+          "score": 0.77093554
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/qie_video.py",
+          "name": "QieVideo.prepare",
+          "score": 0.7663481
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/cntv.py",
+          "name": "CNTV.prepare",
+          "score": 0.76540744
+        }
+      ]
+    },
+    {
+      "query": "Extracts video ID from live.qq.com.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/qie.py#L35-L48",
+      "expected_name": "QiE.get_vid_from_url",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/qie.py",
+          "name": "QiE.get_vid_from_url",
+          "score": 0.8840169
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/youtube.py",
+          "name": "YouTube.get_vid_from_url",
+          "score": 0.79301405
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "unnamed::42",
+          "score": 0.78256184
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/qie_video.py",
+          "name": "QieVideo.get_vid_from_url",
+          "score": 0.77231246
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "Youku.get_vid_from_url",
+          "score": 0.7689366
+        }
+      ]
+    },
+    {
+      "query": "Format text with color or other effects into ANSI escaped string.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/util/log.py#L60-L62",
+      "expected_name": "sprint",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/util/log.py",
+          "name": "sprint",
+          "score": 0.765733
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/util/log.py",
+          "name": "[file_context::0]",
+          "score": 0.66410595
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/util/log.py",
+          "name": "println",
+          "score": 0.58920944
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/util/log.py",
+          "name": "print_err",
+          "score": 0.55263317
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/util/log.py",
+          "name": "print_log",
+          "score": 0.53799
+        }
+      ]
+    },
+    {
+      "query": "Print a log message to standard error.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/util/log.py#L72-L74",
+      "expected_name": "print_log",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/util/log.py",
+          "name": "print_log",
+          "score": 0.7206942
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/util/log.py",
+          "name": "print_err",
+          "score": 0.6863022
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/util/log.py",
+          "name": "e",
+          "score": 0.6644939
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/util/log.py",
+          "name": "i",
+          "score": 0.5992979
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/util/log.py",
+          "name": "w",
+          "score": 0.57309955
+        }
+      ]
+    },
+    {
+      "query": "Print an error log message.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/util/log.py#L88-L92",
+      "expected_name": "e",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/util/log.py",
+          "name": "e",
+          "score": 0.6616405
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/util/log.py",
+          "name": "print_log",
+          "score": 0.64546883
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/util/log.py",
+          "name": "print_err",
+          "score": 0.5865926
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/util/log.py",
+          "name": "i",
+          "score": 0.570593
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/util/log.py",
+          "name": "w",
+          "score": 0.55344754
+        }
+      ]
+    },
+    {
+      "query": "What a Terrible Failure!",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/util/log.py#L94-L98",
+      "expected_name": "wtf",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/netease.py",
+          "name": "netease_hymn",
+          "score": 0.52985394
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/util/log.py",
+          "name": "wtf",
+          "score": 0.52654624
+        },
+        {
+          "rank": 3,
+          "file_path": "you-get.json",
+          "name": "config::38",
+          "score": 0.49427786
+        },
+        {
+          "rank": 4,
+          "file_path": ".github/workflows/python-package.yml",
+          "name": "config::2",
+          "score": 0.46600085
+        },
+        {
+          "rank": 5,
+          "file_path": "CHANGELOG.rst",
+          "name": "section::0",
+          "score": 0.4534745
+        }
+      ]
+    },
+    {
+      "query": "Detect operating system.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/util/os.py#L5-L32",
+      "expected_name": "detect_os",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/util/os.py",
+          "name": "[file_context]",
+          "score": 0.78605545
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/util/os.py",
+          "name": "detect_os",
+          "score": 0.78596854
+        },
+        {
+          "rank": 3,
+          "file_path": "tests/test_util.py",
+          "name": "TestUtil.test_legitimize",
+          "score": 0.5095789
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/processor/ffmpeg.py",
+          "name": "has_ffmpeg_installed",
+          "score": 0.48483413
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/processor/ffmpeg.py",
+          "name": "get_usable_ffmpeg",
+          "score": 0.47627258
+        }
+      ]
+    },
+    {
+      "query": "Source: Android mobile",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/miaopai.py#L20-L37",
+      "expected_name": "miaopai_download_by_fid",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": ".github/workflows/python-package.yml",
+          "name": "config::2",
+          "score": 0.56734407
+        },
+        {
+          "rank": 2,
+          "file_path": "you-get.json",
+          "name": "config::38",
+          "score": 0.5344622
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/huomaotv.py",
+          "name": "get_mobile_room_url",
+          "score": 0.522349
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/showroom.py",
+          "name": "showroom_download_by_room_id",
+          "score": 0.5206001
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/miaopai.py",
+          "name": "miaopai_download_by_fid",
+          "score": 0.5018611
+        }
+      ]
+    },
+    {
+      "query": "str->None",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/vimeo.py#L15-L19",
+      "expected_name": "vimeo_download_by_channel",
+      "collection": "you-get",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/netease.py",
+          "name": "netease_hymn",
+          "score": 0.49489492
+        },
+        {
+          "rank": 2,
+          "file_path": "you-get.json",
+          "name": "config::38",
+          "score": 0.49391448
+        },
+        {
+          "rank": 3,
+          "file_path": "requirements.txt",
+          "name": "chunk::0",
+          "score": 0.48851517
+        },
+        {
+          "rank": 4,
+          "file_path": ".github/workflows/python-package.yml",
+          "name": "config::2",
+          "score": 0.48392698
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/common.py",
+          "name": "tr",
+          "score": 0.46252775
+        }
+      ]
+    },
+    {
+      "query": "str/int->None",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/vimeo.py#L22-L36",
+      "expected_name": "vimeo_download_by_channel_id",
+      "collection": "you-get",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/util/strings.py",
+          "name": "_sharp2uni",
+          "score": 0.5578493
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/common.py",
+          "name": "url_save.numreturn",
+          "score": 0.52657807
+        },
+        {
+          "rank": 3,
+          "file_path": "you-get.json",
+          "name": "config::38",
+          "score": 0.51499504
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/util/strings.py",
+          "name": "parameterize",
+          "score": 0.49030498
+        },
+        {
+          "rank": 5,
+          "file_path": ".github/workflows/python-package.yml",
+          "name": "config::2",
+          "score": 0.48726466
+        }
+      ]
+    },
+    {
+      "query": "try:\n        # normal Vimeo video\n        html = get_content('https://vimeo.com/' + id)\n        cfg_patt = r'clip_page_config\\s*=\\s*(\\{.+?\\});'\n        cfg = json.loads(match1(html, cfg_patt))\n        video_page = get_content(cfg['player']['config_url'], headers=fake_headers)\n        title = cfg['clip']['title']\n        info = loads(video_page)\n    except:\n        # embedded player - referer may be required\n        if 'referer' in kwargs:\n            fake_headers['Referer'] = kwargs['referer']\n\n        video_page = get_content('http://player.vimeo.com/video/%s' % id, headers=fake_headers)\n        title = r1(r'<title>([^<]+)</title>', video_page)\n        info = loads(match1(video_page, r'var t=(\\{.+?\\});'))\n\n    streams = info['request']['files']['progressive']\n    streams = sorted(streams, key=lambda i: i['height'])\n    url = streams[-1]['url']\n\n    type, ext, size = url_info(url, faker=True)\n\n    print_info(site_info, title, type, size)\n    if not info_only:\n        download_urls([url], title, ext, size, output_dir, merge=merge, faker=True)",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/vimeo.py#L134-L164",
+      "expected_name": "vimeo_download_by_id",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download",
+          "score": 0.7688635
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download_by_id",
+          "score": 0.7585349
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/ifeng.py",
+          "name": "ifeng_download",
+          "score": 0.75327736
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/vk.py",
+          "name": "[file_context]",
+          "score": 0.74285054
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_zxt",
+          "score": 0.72864443
+        }
+      ]
+    },
+    {
+      "query": "str->dict\n    Information for CKPlayer API content.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/ckplayer.py#L13-L39",
+      "expected_name": "ckplayer_get_info_by_xml",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/ckplayer.py",
+          "name": "ckplayer_get_info_by_xml",
+          "score": 0.7438353
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/ckplayer.py",
+          "name": "[file_context]",
+          "score": 0.651958
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/infoq.py",
+          "name": "Infoq.prepare",
+          "score": 0.57791513
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/le.py",
+          "name": "video_info",
+          "score": 0.5674678
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/toutiao.py",
+          "name": "ToutiaoVideoInfo.__str__",
+          "score": 0.5671381
+        }
+      ]
+    },
+    {
+      "query": "Splicing URLs according to video ID to get video details",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/ixigua.py#L34-L78",
+      "expected_name": "get_video_url_from_video_id",
+      "collection": "you-get",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/youtube.py",
+          "name": "YouTube.get_vid_from_url",
+          "score": 0.77558935
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "unnamed::42",
+          "score": 0.768353
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/qie.py",
+          "name": "QiE.get_vid_from_url",
+          "score": 0.75510985
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "Youku.get_vid_from_page",
+          "score": 0.7400838
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/zhanqi.py",
+          "name": "zhanqi_video",
+          "score": 0.73853534
+        }
+      ]
+    },
+    {
+      "query": "Extracts video ID from URL.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/mgtv.py#L27-L33",
+      "expected_name": "MGTV.get_vid_from_url",
+      "collection": "you-get",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "unnamed::42",
+          "score": 0.8820136
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/youtube.py",
+          "name": "YouTube.get_vid_from_url",
+          "score": 0.8750359
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/qie.py",
+          "name": "QiE.get_vid_from_url",
+          "score": 0.8298076
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "Youku.get_vid_from_url",
+          "score": 0.8211328
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/qie_video.py",
+          "name": "QieVideo.get_vid_from_url",
+          "score": 0.8077616
+        }
+      ]
+    },
+    {
+      "query": "str->list of str\n        Give you the real URLs.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/mgtv.py#L37-L58",
+      "expected_name": "MGTV.get_mgtv_real_url",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 3,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/miomio.py",
+          "name": "sina_xml_to_url_list",
+          "score": 0.70012593
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/ucas.py",
+          "name": "_ucas_get_url_lists_by_resourceID",
+          "score": 0.6471358
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "MGTV.get_mgtv_real_url",
+          "score": 0.60627604
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/common.py",
+          "name": "general_m3u8_extractor",
+          "score": 0.601726
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/sohu.py",
+          "name": "real_url",
+          "score": 0.58578634
+        }
+      ]
+    },
+    {
+      "query": "Get (branch, commit) from HEAD of a git repo.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/util/git.py#L7-L15",
+      "expected_name": "get_head",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/util/git.py",
+          "name": "get_head",
+          "score": 0.85635364
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/util/git.py",
+          "name": "[file_context]",
+          "score": 0.772687
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/util/git.py",
+          "name": "get_version",
+          "score": 0.56937474
+        },
+        {
+          "rank": 4,
+          "file_path": ".github/workflows/python-package.yml",
+          "name": "config::4",
+          "score": 0.52161115
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/version.py",
+          "name": "[file_context]",
+          "score": 0.4839243
+        }
+      ]
+    },
+    {
+      "query": "Converts a string to a valid filename.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/util/fs.py#L5-L47",
+      "expected_name": "legitimize",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/util/fs.py",
+          "name": "legitimize",
+          "score": 0.71842456
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/util/fs.py",
+          "name": "[file_context]",
+          "score": 0.7026043
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/util/strings.py",
+          "name": "get_filename",
+          "score": 0.64270586
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/common.py",
+          "name": "escape_file_path",
+          "score": 0.5708433
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/util/strings.py",
+          "name": "[file_context]",
+          "score": 0.5614086
+        }
+      ]
+    },
+    {
+      "query": "Get (width, height) of the current terminal.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/util/term.py#L3-L9",
+      "expected_name": "get_terminal_size",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/util/term.py",
+          "name": "[file_context]",
+          "score": 0.83798856
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/util/term.py",
+          "name": "get_terminal_size",
+          "score": 0.8167932
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/processor/join_mp4.py",
+          "name": "Atom.calsize",
+          "score": 0.48899722
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/ximalaya.py",
+          "name": "print_stream_info",
+          "score": 0.39924142
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/bigthink.py",
+          "name": "unnamed::20",
+          "score": 0.3991949
+        }
+      ]
+    },
+    {
+      "query": "Downloads CBS videos by URL.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/cbs.py#L9-L17",
+      "expected_name": "cbs_download",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/cbs.py",
+          "name": "cbs_download",
+          "score": 0.8549358
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/cbs.py",
+          "name": "[file_context]",
+          "score": 0.7560947
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/le.py",
+          "name": "letv_download",
+          "score": 0.71948016
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/fc2video.py",
+          "name": "fc2video_download",
+          "score": 0.7169235
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/cntv.py",
+          "name": "cntv_download_by_id",
+          "score": 0.71454763
+        }
+      ]
+    },
+    {
+      "query": "Override the original one\n        Ugly ugly dirty hack",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/iqiyi.py#L158-L218",
+      "expected_name": "Iqiyi.download",
+      "collection": "you-get",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/missevan.py",
+          "name": "MissEvanWithStream.__init__",
+          "score": 0.46793503
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/missevan.py",
+          "name": "MissEvan.__init__",
+          "score": 0.45148802
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/youtube.py",
+          "name": "YouTube.dethrottle",
+          "score": 0.43167514
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/missevan.py",
+          "name": "MissEvanWithStream.set_danmaku",
+          "score": 0.42465562
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "unnamed::107",
+          "score": 0.42403597
+        }
+      ]
+    },
+    {
+      "query": "str, str, str, bool, bool ->None\n\n    Download Acfun video by vid.\n\n    Call Acfun API, decide which site to use, and pass the job to its\n    extractor.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/acfun.py#L42-L109",
+      "expected_name": "acfun_download_by_vid",
+      "collection": "you-get",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/acfun.py",
+          "name": "[file_context]",
+          "score": 0.84005
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/funshion.py",
+          "name": "funshion_download",
+          "score": 0.7853819
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractor.py",
+          "name": "VideoExtractor.download_by_vid",
+          "score": 0.7762524
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/acfun.py",
+          "name": "AcFun.acfun_download",
+          "score": 0.776032
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/infoq.py",
+          "name": "[file_context]",
+          "score": 0.7672528
+        }
+      ]
+    },
+    {
+      "query": "Main entry point.\n    you-get-dev",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/__main__.py#L24-L85",
+      "expected_name": "main_dev",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/__main__.py",
+          "name": "main_dev",
+          "score": 0.81499016
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/__main__.py",
+          "name": "[file_context]",
+          "score": 0.81328905
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/__main__.py",
+          "name": "main",
+          "score": 0.76972073
+        },
+        {
+          "rank": 4,
+          "file_path": "you-get",
+          "name": "chunk::0",
+          "score": 0.6976706
+        },
+        {
+          "rank": 5,
+          "file_path": "README.md",
+          "name": "section::9",
+          "score": 0.67102045
+        }
+      ]
+    },
+    {
+      "query": "str, str->True\n    WARNING: NOT THE SAME PARMS AS OTHER FUNCTIONS!!!!!!\n    You can basicly download anything with this function\n    but better leave it alone with",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/processor/ffmpeg.py#L220-L262",
+      "expected_name": "ffmpeg_download_stream",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 3,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/qingting.py",
+          "name": "qingting_download_by_url",
+          "score": 0.6683264
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/kuwo.py",
+          "name": "kuwo_download",
+          "score": 0.66228783
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/processor/ffmpeg.py",
+          "name": "ffmpeg_download_stream",
+          "score": 0.655651
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/common.py",
+          "name": "any_download",
+          "score": 0.64595306
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/yixia.py",
+          "name": "yixia_download",
+          "score": 0.640996
+        }
+      ]
+    },
+    {
+      "query": "Scans through a string for substrings matched some patterns (first-subgroups only).\n\n    Args:\n        text: A string to be scanned.\n        patterns: Arbitrary number of regex patterns.\n\n    Returns:\n        When only one pattern is given, returns a string (None if no match found).\n        When more than one pattern are given, returns a list of strings ([] if no match found).",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/common.py#L224-L249",
+      "expected_name": "match1",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/common.py",
+          "name": "match1",
+          "score": 0.82076526
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/common.py",
+          "name": "matchall",
+          "score": 0.7893449
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/common.py",
+          "name": "r1_of",
+          "score": 0.6332152
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/common.py",
+          "name": "r1",
+          "score": 0.5550078
+        },
+        {
+          "rank": 5,
+          "file_path": "tests/test_common.py",
+          "name": "TestCommon.test_match1",
+          "score": 0.44030657
+        }
+      ]
+    },
+    {
+      "query": "Scans through a string for substrings matched some patterns.\n\n    Args:\n        text: A string to be scanned.\n        patterns: a list of regex pattern.\n\n    Returns:\n        a list if matched. empty if not.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/common.py#L252-L268",
+      "expected_name": "matchall",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/common.py",
+          "name": "matchall",
+          "score": 0.83582056
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/common.py",
+          "name": "match1",
+          "score": 0.78146553
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/common.py",
+          "name": "r1_of",
+          "score": 0.61395186
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/common.py",
+          "name": "r1",
+          "score": 0.5248066
+        },
+        {
+          "rank": 5,
+          "file_path": "tests/test_common.py",
+          "name": "[file_context]",
+          "score": 0.44928563
+        }
+      ]
+    },
+    {
+      "query": "Parses the query string of a URL and returns the value of a parameter.\n\n    Args:\n        url: A URL.\n        param: A string representing the name of the parameter.\n\n    Returns:\n        The value of the parameter.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/common.py#L285-L299",
+      "expected_name": "parse_query_param",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/common.py",
+          "name": "parse_query_param",
+          "score": 0.8539682
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/youtube.py",
+          "name": "YouTube.get_playlist_id_from_url",
+          "score": 0.57725024
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/youtube.py",
+          "name": "YouTube.get_vid_from_url",
+          "score": 0.5315814
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "unnamed::42",
+          "score": 0.50148106
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "Youku.get_vid_from_url",
+          "score": 0.4783072
+        }
+      ]
+    },
+    {
+      "query": "Decompresses data for Content-Encoding: gzip.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/common.py#L319-L326",
+      "expected_name": "ungzip",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/common.py",
+          "name": "ungzip",
+          "score": 0.7937454
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/common.py",
+          "name": "undeflate",
+          "score": 0.7207678
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/le.py",
+          "name": "decode",
+          "score": 0.5376308
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/processor/join_mp4.py",
+          "name": "read_avc1",
+          "score": 0.46902347
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/common.py",
+          "name": "get_content",
+          "score": 0.45834237
+        }
+      ]
+    },
+    {
+      "query": "Decompresses data for Content-Encoding: deflate.\n    (the zlib compression is used.)",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/common.py#L329-L335",
+      "expected_name": "undeflate",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/common.py",
+          "name": "undeflate",
+          "score": 0.88366264
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/common.py",
+          "name": "ungzip",
+          "score": 0.74314314
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/le.py",
+          "name": "decode",
+          "score": 0.5733516
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/processor/join_mp4.py",
+          "name": "read_avc1",
+          "score": 0.5157516
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/funshion.py",
+          "name": "unnamed::109",
+          "score": 0.5088136
+        }
+      ]
+    },
+    {
+      "query": "Gets the content of a URL via sending a HTTP GET request.\n\n    Args:\n        url: A URL.\n        headers: Request headers used by the client.\n        decoded: Whether decode the response body using UTF-8 or the charset specified in Content-Type.\n\n    Returns:\n        The content as a string.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/common.py#L415-L454",
+      "expected_name": "get_content",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/common.py",
+          "name": "get_content",
+          "score": 0.8542405
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/missevan.py",
+          "name": "MissEvan._get_content",
+          "score": 0.71858305
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/common.py",
+          "name": "post_content",
+          "score": 0.71670103
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/common.py",
+          "name": "get_decoded_html",
+          "score": 0.6712478
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/flickr.py",
+          "name": "get_content_headered",
+          "score": 0.67029226
+        }
+      ]
+    },
+    {
+      "query": "Post the content of a URL via sending a HTTP POST request.\n\n    Args:\n        url: A URL.\n        headers: Request headers used by the client.\n        decoded: Whether decode the response body using UTF-8 or the charset specified in Content-Type.\n\n    Returns:\n        The content as a string.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/common.py#L457-L501",
+      "expected_name": "post_content",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/common.py",
+          "name": "post_content",
+          "score": 0.8205936
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/common.py",
+          "name": "get_content",
+          "score": 0.67081964
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/flickr.py",
+          "name": "get_content_headered",
+          "score": 0.5649048
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/common.py",
+          "name": "get_decoded_html",
+          "score": 0.5435867
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/missevan.py",
+          "name": "MissEvan._get_content",
+          "score": 0.5356391
+        }
+      ]
+    },
+    {
+      "query": "Parses host name and port number from a string.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/common.py#L1216-L1226",
+      "expected_name": "parse_host",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/common.py",
+          "name": "parse_host",
+          "score": 0.82919765
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/icourses.py",
+          "name": "ICousesExactor.get_media_host",
+          "score": 0.5040673
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/baidu.py",
+          "name": "baidu_pan_parse",
+          "score": 0.46517035
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/showroom.py",
+          "name": "showroom_get_roomid_by_room_url_key",
+          "score": 0.4609499
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/flickr.py",
+          "name": "get_NSID",
+          "score": 0.46023992
+        }
+      ]
+    },
+    {
+      "query": "Overload default print function as py (<3.3) does not support 'flush' keyword.\n    Although the function name can be same as print to get itself overloaded automatically,\n    I'd rather leave it with a different name and only overload it when importing to make less confusion.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/common.py#L1258-L1273",
+      "expected_name": "print_more_compatible",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/common.py",
+          "name": "print_more_compatible",
+          "score": 0.86560726
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/common.py",
+          "name": "maybe_print",
+          "score": 0.6594437
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/util/log.py",
+          "name": "println",
+          "score": 0.6237551
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/util/log.py",
+          "name": "print_log",
+          "score": 0.59706616
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/util/log.py",
+          "name": "i",
+          "score": 0.5927452
+        }
+      ]
+    },
+    {
+      "query": "str->str",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/showroom.py#L11-L24",
+      "expected_name": "showroom_get_roomid_by_room_url_key",
+      "collection": "you-get",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/processor/join_flv.py",
+          "name": "ECMAObject.__str__",
+          "score": 0.4718231
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/netease.py",
+          "name": "netease_hymn",
+          "score": 0.461186
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/common.py",
+          "name": "tr",
+          "score": 0.45748198
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/util/strings.py",
+          "name": "[file_context]",
+          "score": 0.455236
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/processor/join_flv.py",
+          "name": "read_amf_string",
+          "score": 0.45444945
+        }
+      ]
+    },
+    {
+      "query": "Source: Android mobile",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/showroom.py#L26-L56",
+      "expected_name": "showroom_download_by_room_id",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 4,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": ".github/workflows/python-package.yml",
+          "name": "config::2",
+          "score": 0.56734407
+        },
+        {
+          "rank": 2,
+          "file_path": "you-get.json",
+          "name": "config::38",
+          "score": 0.5344622
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/huomaotv.py",
+          "name": "get_mobile_room_url",
+          "score": 0.522349
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/showroom.py",
+          "name": "showroom_download_by_room_id",
+          "score": 0.5206001
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/miaopai.py",
+          "name": "miaopai_download_by_fid",
+          "score": 0.5018611
+        }
+      ]
+    },
+    {
+      "query": "JSON, int, int, int->str\n    \n    Get a proper title with courseid+topicID+partID.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/wanmen.py#L18-L25",
+      "expected_name": "_wanmen_get_title_by_json_topic_part",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "_wanmen_get_title_by_json_topic_part",
+          "score": 0.8716169
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "_wanmen_get_boke_id_by_json_topic_part",
+          "score": 0.7890862
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "wanmen_download_by_course_topic",
+          "score": 0.6789443
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "wanmen_download_by_course_topic_part",
+          "score": 0.67584264
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "_wanmen_get_json_api_content_by_courseID",
+          "score": 0.67199266
+        }
+      ]
+    },
+    {
+      "query": "int->None\n    \n    Download a WHOLE course.\n    Reuse the API call to save time.",
+      "expected_file": "https://github.com/soimort/you-get/blob/b746ac01c9f39de94cac2d56f665285b0523b974/src/you_get/extractors/wanmen.py#L37-L51",
+      "expected_name": "wanmen_download_by_course",
+      "collection": "you-get",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "wanmen_download_by_course",
+          "score": 0.8451506
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "wanmen_download",
+          "score": 0.81277645
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "wanmen_download_by_course_topic",
+          "score": 0.79566526
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "wanmen_download_by_course_topic_part",
+          "score": 0.79205304
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/wanmen.py",
+          "name": "[file_context]",
+          "score": 0.7878332
+        }
+      ]
+    }
+  ]
+}

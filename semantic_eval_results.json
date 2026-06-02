@@ -1,0 +1,1094 @@
+{
+  "config": {
+    "collection": "you-get",
+    "top_k": 15,
+    "search_mode": "hybrid"
+  },
+  "metrics": {
+    "recall_at_15": 0.8182,
+    "mrr": 0.503,
+    "hits": 9,
+    "total": 11,
+    "errors": 0
+  },
+  "results": [
+    {
+      "target": "fc2video_download",
+      "query": "where is fc2 video download wrapped",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/fc2video.py",
+          "name": "fc2video_download",
+          "score": 1.0
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/fc2video.py",
+          "name": "[file_context]",
+          "score": 0.6666667
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/fc2video.py",
+          "name": "fc2video_download_by_upid",
+          "score": 0.4166667
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/fc2video.py",
+          "name": "makeMimi",
+          "score": 0.25
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/miaopai.py",
+          "name": "miaopai_download_by_fid",
+          "score": 0.2
+        },
+        {
+          "rank": 6,
+          "file_path": "src/you_get/extractors/baidu.py",
+          "name": "baidu_pan_download",
+          "score": 0.2
+        },
+        {
+          "rank": 7,
+          "file_path": "src/you_get/extractors/ucas.py",
+          "name": "ucas_download_single",
+          "score": 0.16666667
+        },
+        {
+          "rank": 8,
+          "file_path": "src/you_get/extractors/miaopai.py",
+          "name": "miaopai_download_by_wbmp",
+          "score": 0.14285715
+        },
+        {
+          "rank": 9,
+          "file_path": "README.md",
+          "name": "section::23",
+          "score": 0.14285715
+        },
+        {
+          "rank": 10,
+          "file_path": "src/you_get/extractors/le.py",
+          "name": "letvcloud_download_by_vu",
+          "score": 0.125
+        },
+        {
+          "rank": 11,
+          "file_path": "src/you_get/extractors/cntv.py",
+          "name": "[file_context]",
+          "score": 0.125
+        },
+        {
+          "rank": 12,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vkey",
+          "score": 0.123809524
+        },
+        {
+          "rank": 13,
+          "file_path": "src/you_get/extractors/toutiao.py",
+          "name": "[file_context]",
+          "score": 0.11111111
+        },
+        {
+          "rank": 14,
+          "file_path": "src/you_get/extractors/cntv.py",
+          "name": "cntv_download_by_id",
+          "score": 0.11111111
+        },
+        {
+          "rank": 15,
+          "file_path": "src/you_get/extractors/infoq.py",
+          "name": "[file_context]",
+          "score": 0.1
+        }
+      ]
+    },
+    {
+      "target": "yixia_download",
+      "query": "where is yixia video download function",
+      "hit": true,
+      "hit_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/yixia.py",
+          "name": "[file_context]",
+          "score": 0.8333334
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/yixia.py",
+          "name": "yixia_download",
+          "score": 0.8333334
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/yixia.py",
+          "name": "yixia_xiaokaxiu_download_by_scid",
+          "score": 0.45
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/yixia.py",
+          "name": "yixia_miaopai_download_by_scid",
+          "score": 0.2909091
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "youku_download_by_vid",
+          "score": 0.25
+        },
+        {
+          "rank": 6,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download",
+          "score": 0.1936937
+        },
+        {
+          "rank": 7,
+          "file_path": "src/you_get/extractors/__init__.py",
+          "name": "[file_context::0]",
+          "score": 0.16666667
+        },
+        {
+          "rank": 8,
+          "file_path": "src/you_get/extractors/toutiao.py",
+          "name": "toutiao_download",
+          "score": 0.16666667
+        },
+        {
+          "rank": 9,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vid",
+          "score": 0.16507937
+        },
+        {
+          "rank": 10,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "[file_context]",
+          "score": 0.16025642
+        },
+        {
+          "rank": 11,
+          "file_path": "src/you_get/extractors/cntv.py",
+          "name": "[file_context]",
+          "score": 0.14285715
+        },
+        {
+          "rank": 12,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vkey",
+          "score": 0.13611111
+        },
+        {
+          "rank": 13,
+          "file_path": "src/you_get/extractors/toutiao.py",
+          "name": "[file_context]",
+          "score": 0.125
+        },
+        {
+          "rank": 14,
+          "file_path": "src/you_get/extractors/xinpianchang.py",
+          "name": "[file_context]",
+          "score": 0.11212122
+        },
+        {
+          "rank": 15,
+          "file_path": "src/you_get/extractors/infoq.py",
+          "name": "[file_context]",
+          "score": 0.11111111
+        }
+      ]
+    },
+    {
+      "target": "vimeo_download_by_channel",
+      "query": "how to download vimeo channel videos",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download_by_channel_id",
+          "score": 0.8333334
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download_by_channel",
+          "score": 0.75
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "[file_context::0]",
+          "score": 0.53333336
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download",
+          "score": 0.45
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download_by_id",
+          "score": 0.30952382
+        },
+        {
+          "rank": 6,
+          "file_path": "README.md",
+          "name": "section::25",
+          "score": 0.16666667
+        },
+        {
+          "rank": 7,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vkey",
+          "score": 0.14285715
+        },
+        {
+          "rank": 8,
+          "file_path": "src/you_get/extractors/zhanqi.py",
+          "name": "zhanqi_download",
+          "score": 0.13225806
+        },
+        {
+          "rank": 9,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vid",
+          "score": 0.125
+        },
+        {
+          "rank": 10,
+          "file_path": "src/you_get/extractors/tumblr.py",
+          "name": "[file_context]",
+          "score": 0.125
+        },
+        {
+          "rank": 11,
+          "file_path": "src/you_get/extractors/joy.py",
+          "name": "[file_context]",
+          "score": 0.11590909
+        },
+        {
+          "rank": 12,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "VimeoExtractor.prepare",
+          "score": 0.11111111
+        },
+        {
+          "rank": 13,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download",
+          "score": 0.11111111
+        },
+        {
+          "rank": 14,
+          "file_path": "src/you_get/extractors/joy.py",
+          "name": "joy_download",
+          "score": 0.105128214
+        },
+        {
+          "rank": 15,
+          "file_path": "README.md",
+          "name": "section::11",
+          "score": 0.1
+        }
+      ]
+    },
+    {
+      "target": "vimeo_download_by_channel_id",
+      "query": "download vimeo channel by channel id",
+      "hit": true,
+      "hit_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download_by_channel",
+          "score": 0.8333334
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download_by_channel_id",
+          "score": 0.75
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "[file_context::0]",
+          "score": 0.53333336
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download",
+          "score": 0.45
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download_by_id",
+          "score": 0.33333334
+        },
+        {
+          "rank": 6,
+          "file_path": "src/you_get/extractors/joy.py",
+          "name": "[file_context]",
+          "score": 0.20535715
+        },
+        {
+          "rank": 7,
+          "file_path": "src/you_get/extractors/joy.py",
+          "name": "joy_download",
+          "score": 0.16346154
+        },
+        {
+          "rank": 8,
+          "file_path": "src/you_get/extractors/yixia.py",
+          "name": "yixia_miaopai_download_by_scid",
+          "score": 0.16111112
+        },
+        {
+          "rank": 9,
+          "file_path": "src/you_get/extractors/joy.py",
+          "name": "video_info",
+          "score": 0.14835165
+        },
+        {
+          "rank": 10,
+          "file_path": "src/you_get/extractors/veoh.py",
+          "name": "veoh_download",
+          "score": 0.14285715
+        },
+        {
+          "rank": 11,
+          "file_path": "src/you_get/extractors/cntv.py",
+          "name": "cntv_download_by_id",
+          "score": 0.12857144
+        },
+        {
+          "rank": 12,
+          "file_path": "src/you_get/extractors/zhanqi.py",
+          "name": "zhanqi_download",
+          "score": 0.125
+        },
+        {
+          "rank": 13,
+          "file_path": "src/you_get/extractors/bilibili.py",
+          "name": "unnamed::117",
+          "score": 0.11529934
+        },
+        {
+          "rank": 14,
+          "file_path": "src/you_get/extractors/qingting.py",
+          "name": "[file_context]",
+          "score": 0.11111111
+        },
+        {
+          "rank": 15,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "VimeoExtractor.prepare",
+          "score": 0.1
+        }
+      ]
+    },
+    {
+      "target": "dictify",
+      "query": "where is html table converted to dictionary",
+      "hit": true,
+      "hit_rank": 5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/tudou.py",
+          "name": "parse_plist",
+          "score": 0.55
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/funshion.py",
+          "name": "KBaseMapping.__init__",
+          "score": 0.5
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/baidu.py",
+          "name": "baidu_pan_parse",
+          "score": 0.36666667
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/funshion.py",
+          "name": "KBaseMapping.mapping",
+          "score": 0.33333334
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/ucas.py",
+          "name": "dictify",
+          "score": 0.33333334
+        },
+        {
+          "rank": 6,
+          "file_path": "src/you_get/extractors/coub.py",
+          "name": "get_coub_data",
+          "score": 0.27439025
+        },
+        {
+          "rank": 7,
+          "file_path": "src/you_get/extractors/funshion.py",
+          "name": "[file_context]",
+          "score": 0.25
+        },
+        {
+          "rank": 8,
+          "file_path": "src/you_get/extractors/tudou.py",
+          "name": "parse_playlist",
+          "score": 0.20833334
+        },
+        {
+          "rank": 9,
+          "file_path": "src/you_get/extractors/funshion.py",
+          "name": "unnamed::51",
+          "score": 0.2
+        },
+        {
+          "rank": 10,
+          "file_path": "src/you_get/util/strings.py",
+          "name": "unescape_html",
+          "score": 0.18633541
+        },
+        {
+          "rank": 11,
+          "file_path": "src/you_get/extractors/ckplayer.py",
+          "name": "dictify",
+          "score": 0.14285715
+        },
+        {
+          "rank": 12,
+          "file_path": "src/you_get/extractors/baomihua.py",
+          "name": "baomihua_download",
+          "score": 0.12564103
+        },
+        {
+          "rank": 13,
+          "file_path": "src/you_get/common.py",
+          "name": "url_save.numreturn",
+          "score": 0.125
+        },
+        {
+          "rank": 14,
+          "file_path": "src/you_get/extractors/kugou.py",
+          "name": "kugou_download_playlist",
+          "score": 0.125
+        },
+        {
+          "rank": 15,
+          "file_path": "README.md",
+          "name": "section::22",
+          "score": 0.11111111
+        }
+      ]
+    },
+    {
+      "target": "veoh_download_by_id",
+      "query": "how is veoh video downloaded by id",
+      "hit": true,
+      "hit_rank": 3,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/veoh.py",
+          "name": "veoh_download",
+          "score": 0.8333334
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/veoh.py",
+          "name": "[file_context]",
+          "score": 0.75
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/veoh.py",
+          "name": "veoh_download_by_id",
+          "score": 0.53333336
+        },
+        {
+          "rank": 4,
+          "file_path": "README.md",
+          "name": "section::18",
+          "score": 0.25
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download_by_id",
+          "score": 0.2
+        },
+        {
+          "rank": 6,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download",
+          "score": 0.1936937
+        },
+        {
+          "rank": 7,
+          "file_path": "README.md",
+          "name": "section::17",
+          "score": 0.16666667
+        },
+        {
+          "rank": 8,
+          "file_path": "src/you_get/extractors/w56.py",
+          "name": "w56_download_by_id",
+          "score": 0.14285715
+        },
+        {
+          "rank": 9,
+          "file_path": "README.md",
+          "name": "section::11",
+          "score": 0.14285715
+        },
+        {
+          "rank": 10,
+          "file_path": "src/you_get/extractors/le.py",
+          "name": "letvcloud_download_by_vu",
+          "score": 0.125
+        },
+        {
+          "rank": 11,
+          "file_path": "README.md",
+          "name": "section::24",
+          "score": 0.125
+        },
+        {
+          "rank": 12,
+          "file_path": "src/you_get/extractors/zhanqi.py",
+          "name": "zhanqi_video",
+          "score": 0.11655012
+        },
+        {
+          "rank": 13,
+          "file_path": "src/you_get/extractors/vimeo.py",
+          "name": "vimeo_download_by_channel_id",
+          "score": 0.11111111
+        },
+        {
+          "rank": 14,
+          "file_path": "src/you_get/extractors/__init__.py",
+          "name": "[file_context::0]",
+          "score": 0.11111111
+        },
+        {
+          "rank": 15,
+          "file_path": "src/you_get/extractors/bokecc.py",
+          "name": "BokeCC.download_by_id",
+          "score": 0.1
+        }
+      ]
+    },
+    {
+      "target": "get_video_url_from_video_id",
+      "query": "how is ixigua video url built from video id",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/ixigua.py",
+          "name": "[file_context]",
+          "score": 0.625
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/qie.py",
+          "name": "QiE.get_vid_from_url",
+          "score": 0.5
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/ixigua.py",
+          "name": "ixigua_download_playlist_by_url",
+          "score": 0.43333334
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/ucas.py",
+          "name": "_get_video_query_url",
+          "score": 0.33333334
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "Youku.get_vid_from_url",
+          "score": 0.25
+        },
+        {
+          "rank": 6,
+          "file_path": "README.md",
+          "name": "section::11",
+          "score": 0.25
+        },
+        {
+          "rank": 7,
+          "file_path": "src/you_get/extractors/youtube.py",
+          "name": "YouTube.get_vid_from_url",
+          "score": 0.2
+        },
+        {
+          "rank": 8,
+          "file_path": "README.md",
+          "name": "section::24",
+          "score": 0.2
+        },
+        {
+          "rank": 9,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "unnamed::42",
+          "score": 0.16666667
+        },
+        {
+          "rank": 10,
+          "file_path": "README.md",
+          "name": "section::25",
+          "score": 0.16666667
+        },
+        {
+          "rank": 11,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "Youku.get_vid_from_page",
+          "score": 0.14285715
+        },
+        {
+          "rank": 12,
+          "file_path": "CONTRIBUTING.md",
+          "name": "section::0",
+          "score": 0.14285715
+        },
+        {
+          "rank": 13,
+          "file_path": "README.md",
+          "name": "section::23",
+          "score": 0.125
+        },
+        {
+          "rank": 14,
+          "file_path": "src/you_get/extractors/ifeng.py",
+          "name": "ifeng_download",
+          "score": 0.11781609
+        },
+        {
+          "rank": 15,
+          "file_path": "src/you_get/extractors/qie_video.py",
+          "name": "QieVideo.get_vid_from_url",
+          "score": 0.11111111
+        }
+      ]
+    },
+    {
+      "target": "MGTV.get_vid_from_url",
+      "query": "where does mgtv extract video id from url",
+      "hit": true,
+      "hit_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "unnamed::42",
+          "score": 0.8333334
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "MGTV.extract",
+          "score": 0.5714286
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "[file_context]",
+          "score": 0.4166667
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/youtube.py",
+          "name": "YouTube.get_vid_from_url",
+          "score": 0.33333334
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/qie.py",
+          "name": "QiE.get_vid_from_url",
+          "score": 0.25
+        },
+        {
+          "rank": 6,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "MGTV.get_mgtv_real_url",
+          "score": 0.21978024
+        },
+        {
+          "rank": 7,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "Youku.get_vid_from_url",
+          "score": 0.2
+        },
+        {
+          "rank": 8,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "MGTV.download_playlist_by_url",
+          "score": 0.2
+        },
+        {
+          "rank": 9,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "MGTV.tk2",
+          "score": 0.16666667
+        },
+        {
+          "rank": 10,
+          "file_path": "src/you_get/extractors/bokecc.py",
+          "name": "BokeCC.extract",
+          "score": 0.14973262
+        },
+        {
+          "rank": 11,
+          "file_path": "src/you_get/extractors/qie_video.py",
+          "name": "QieVideo.get_vid_from_url",
+          "score": 0.14285715
+        },
+        {
+          "rank": 12,
+          "file_path": "src/you_get/extractors/qie.py",
+          "name": "QiE.extract",
+          "score": 0.13448276
+        },
+        {
+          "rank": 13,
+          "file_path": "src/you_get/extractors/twitter.py",
+          "name": "extract_m3u",
+          "score": 0.13095239
+        },
+        {
+          "rank": 14,
+          "file_path": "src/you_get/extractors/qie_video.py",
+          "name": "QieVideo.extract",
+          "score": 0.12955466
+        },
+        {
+          "rank": 15,
+          "file_path": "src/you_get/extractors/mgtv.py",
+          "name": "MGTV.prepare",
+          "score": 0.125
+        }
+      ]
+    },
+    {
+      "target": "Iqiyi.download",
+      "query": "where is iqiyi download method overridden",
+      "hit": true,
+      "hit_rank": 2,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/iqiyi.py",
+          "name": "[file_context]",
+          "score": 0.5344828
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/iqilu.py",
+          "name": "iqilu_download",
+          "score": 0.5
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/iqiyi.py",
+          "name": "Iqiyi.download_playlist_by_url",
+          "score": 0.4166667
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/iqiyi.py",
+          "name": "Iqiyi.download",
+          "score": 0.4047619
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "youku_download_by_vid",
+          "score": 0.27173913
+        },
+        {
+          "rank": 6,
+          "file_path": "src/you_get/common.py",
+          "name": "get_head",
+          "score": 0.25
+        },
+        {
+          "rank": 7,
+          "file_path": "src/you_get/extractors/iqilu.py",
+          "name": "[file_context]",
+          "score": 0.22777778
+        },
+        {
+          "rank": 8,
+          "file_path": "src/you_get/common.py",
+          "name": "get_location",
+          "score": 0.2
+        },
+        {
+          "rank": 9,
+          "file_path": "src/you_get/extractors/embed.py",
+          "name": "embed_download",
+          "score": 0.18055555
+        },
+        {
+          "rank": 10,
+          "file_path": "src/you_get/extractors/kuwo.py",
+          "name": "kuwo_download",
+          "score": 0.16666667
+        },
+        {
+          "rank": 11,
+          "file_path": "src/you_get/extractors/missevan.py",
+          "name": "MissEvanWithStream.unsupported_method",
+          "score": 0.16666667
+        },
+        {
+          "rank": 12,
+          "file_path": "src/you_get/extractors/embed.py",
+          "name": "[file_context::0]",
+          "score": 0.16507937
+        },
+        {
+          "rank": 13,
+          "file_path": "src/you_get/extractors/yixia.py",
+          "name": "yixia_download",
+          "score": 0.14285715
+        },
+        {
+          "rank": 14,
+          "file_path": "src/you_get/extractors/qq.py",
+          "name": "[file_context]",
+          "score": 0.125
+        },
+        {
+          "rank": 15,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "youku_download_by_url",
+          "score": 0.11111111
+        }
+      ]
+    },
+    {
+      "target": "acfun_download_by_vid",
+      "query": "how is acfun video downloaded by vid",
+      "hit": false,
+      "hit_rank": null,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/acfun.py",
+          "name": "AcFun.acfun_download",
+          "score": 0.7
+        },
+        {
+          "rank": 2,
+          "file_path": "tests/test.py",
+          "name": "YouGetTests.test_acfun",
+          "score": 0.5833334
+        },
+        {
+          "rank": 3,
+          "file_path": "README.md",
+          "name": "section::18",
+          "score": 0.5
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/acfun.py",
+          "name": "[file_context]",
+          "score": 0.43333334
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/tudou.py",
+          "name": "tudou_download",
+          "score": 0.30555555
+        },
+        {
+          "rank": 6,
+          "file_path": "src/you_get/extractors/youku.py",
+          "name": "youku_download_by_vid",
+          "score": 0.22941177
+        },
+        {
+          "rank": 7,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download_by_vid",
+          "score": 0.18452382
+        },
+        {
+          "rank": 8,
+          "file_path": "src/you_get/extractors/acfun.py",
+          "name": "AcFun.prepare",
+          "score": 0.17226891
+        },
+        {
+          "rank": 9,
+          "file_path": "README.md",
+          "name": "section::17",
+          "score": 0.16666667
+        },
+        {
+          "rank": 10,
+          "file_path": "src/you_get/extractors/fc2video.py",
+          "name": "fc2video_download",
+          "score": 0.16666667
+        },
+        {
+          "rank": 11,
+          "file_path": "src/you_get/extractors/tudou.py",
+          "name": "[file_context]",
+          "score": 0.125
+        },
+        {
+          "rank": 12,
+          "file_path": "src/you_get/extractors/fc2video.py",
+          "name": "fc2video_download_by_upid",
+          "score": 0.125
+        },
+        {
+          "rank": 13,
+          "file_path": "src/you_get/extractors/funshion.py",
+          "name": "funshion_download",
+          "score": 0.11111111
+        },
+        {
+          "rank": 14,
+          "file_path": "README.md",
+          "name": "section::11",
+          "score": 0.11111111
+        },
+        {
+          "rank": 15,
+          "file_path": "src/you_get/extractors/sina.py",
+          "name": "sina_download",
+          "score": 0.110119045
+        }
+      ]
+    },
+    {
+      "target": "showroom_get_roomid_by_room_url_key",
+      "query": "where is showroom room id extracted from url",
+      "hit": true,
+      "hit_rank": 1,
+      "retrieved": [
+        {
+          "rank": 1,
+          "file_path": "src/you_get/extractors/showroom.py",
+          "name": "showroom_get_roomid_by_room_url_key",
+          "score": 0.75
+        },
+        {
+          "rank": 2,
+          "file_path": "src/you_get/extractors/showroom.py",
+          "name": "showroom_download",
+          "score": 0.7
+        },
+        {
+          "rank": 3,
+          "file_path": "src/you_get/extractors/showroom.py",
+          "name": "[file_context]",
+          "score": 0.5833334
+        },
+        {
+          "rank": 4,
+          "file_path": "src/you_get/extractors/qie.py",
+          "name": "QiE.get_room_id_from_url",
+          "score": 0.44444445
+        },
+        {
+          "rank": 5,
+          "file_path": "src/you_get/extractors/showroom.py",
+          "name": "showroom_download_by_room_id",
+          "score": 0.2909091
+        },
+        {
+          "rank": 6,
+          "file_path": "src/you_get/extractors/qie.py",
+          "name": "QiE.get_vid_from_url",
+          "score": 0.23809525
+        },
+        {
+          "rank": 7,
+          "file_path": "src/you_get/extractors/huomaotv.py",
+          "name": "get_mobile_room_url",
+          "score": 0.22619048
+        },
+        {
+          "rank": 8,
+          "file_path": "README.md",
+          "name": "section::22",
+          "score": 0.1936937
+        },
+        {
+          "rank": 9,
+          "file_path": "contrib/completion/_you-get",
+          "name": "chunk::0",
+          "score": 0.14285715
+        },
+        {
+          "rank": 10,
+          "file_path": "src/you_get/extractors/bilibili.py",
+          "name": "unnamed::113",
+          "score": 0.12777779
+        },
+        {
+          "rank": 11,
+          "file_path": "src/you_get/extractors/bilibili.py",
+          "name": "unnamed::109",
+          "score": 0.12539186
+        },
+        {
+          "rank": 12,
+          "file_path": "contrib/completion/you-get.fish",
+          "name": "chunk::0",
+          "score": 0.125
+        },
+        {
+          "rank": 13,
+          "file_path": "src/you_get/extractors/icourses.py",
+          "name": "ICousesExactor.do_extract",
+          "score": 0.125
+        },
+        {
+          "rank": 14,
+          "file_path": "src/you_get/common.py",
+          "name": "url_save.numreturn",
+          "score": 0.11111111
+        },
+        {
+          "rank": 15,
+          "file_path": "src/you_get/extractors/huomaotv.py",
+          "name": "[file_context]",
+          "score": 0.10192308
+        }
+      ]
+    }
+  ]
+}
